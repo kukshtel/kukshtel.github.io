@@ -12,7 +12,7 @@ body{font:16px/1.6 -apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Rob
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:980px;margin:0 auto;padding:16px}
-.header{display:flex;align-items:center;gap:16px;justify-content:space-between;border-bottom:1px solid var(--border);}
+.header{display:flex;align-items:center;gap:16px;justify-content:space-between;border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--fg);text-decoration:none}
 .brand .favicon{width:22px;height:22px}
 .header nav{display:flex;gap:16px;flex-wrap:wrap}
@@ -26,11 +26,7 @@ a:hover{text-decoration:underline}
 .card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px;box-shadow:0 4px 12px rgba(0,0,0,.04)}
 .card img{width:108px;height:108px;border-radius:24px;border:1px solid var(--border);background:#f8fafc}
 .card h3{margin:6px 0 2px 0;font-size:16px;text-align:center;font-weight:600;letter-spacing:-0.01em}
-.appstore-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:#000;color:#fff;text-decoration:none;border:1px solid rgba(0,0,0,.8)}
-.appstore-badge svg{fill:#fff;display:block}
-.appstore-badge .t1{display:block;font-size:10px;line-height:1}
-.appstore-badge .t2{display:block;font-size:16px;line-height:1;font-weight:700;letter-spacing:.01em}
-.appstore-badge:hover{filter:brightness(1.05)}
+.store img{display:block;height:40px;width:auto}
 .prose{max-width:780px}
 .prose h1{margin-top:12px}
 .foot{opacity:.9;border-top:1px solid var(--border);margin-top:12px}
