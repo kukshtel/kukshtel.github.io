@@ -30,6 +30,7 @@ a:hover{text-decoration:underline}
 .header nav a{color:var(--fg);opacity:.85}
 .header nav a:hover{opacity:1}
 .main-only{padding-top:28px;padding-bottom:20px}
+.page-title{margin:14px 0 6px 0;font-size:clamp(26px,4vw,34px);font-weight:700;letter-spacing:-0.02em;text-align:center}
 .grid.two{
   display:grid;
   grid-template-columns:repeat(2,minmax(320px,1fr));
@@ -44,16 +45,17 @@ a:hover{text-decoration:underline}
   background:var(--card);border:1px solid var(--border);border-radius:24px;padding:24px;
   display:flex;flex-direction:column;align-items:center;
   box-shadow:0 12px 32px rgba(20,40,120,.08), 0 1px 0 rgba(255,255,255,.5) inset;
-  min-height:360px;
+  min-height:380px;
   width:100%;
 }
 .card img{width:144px;height:144px;border-radius:28px;border:1px solid var(--border);background:#f8fafc;object-fit:cover}
-.card h3{margin:12px 0 2px 0;font-size:18px;text-align:center;font-weight:600;letter-spacing:-0.01em;color:#111827}
-.card .desc{margin:0 0 6px 0;color:var(--muted);font-size:14px;text-align:center}
+.card h3{margin:12px 0 2px 0;font-size:clamp(20px,2.2vw,22px);text-align:center;font-weight:700;letter-spacing:-0.01em;color:#111827}
+.card .desc{margin:0 0 8px 0;color:var(--muted);font-size:clamp(15px,1.6vw,16px);text-align:center}
 .spacer{flex:1}
 .store{display:block;border-radius:0;background:transparent;box-shadow:none}
 .store .badge{display:block;height:44px;width:auto;border-radius:0!important;box-shadow:none!important;filter:none!important}
 .prose{max-width:780px}
-.prose h1{margin-top:12px}
+.prose h1{margin-top:12px;text-align:center}
+.prose.center{text-align:center}
 .foot{opacity:.9;border-top:1px solid var(--border);margin-top:12px}
 .foot p{margin:12px 0}
