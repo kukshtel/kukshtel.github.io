@@ -44,14 +44,15 @@ a:hover{text-decoration:underline}
   background:var(--card);border:1px solid var(--border);border-radius:24px;padding:24px;
   display:flex;flex-direction:column;align-items:center;
   box-shadow:0 12px 32px rgba(20,40,120,.08), 0 1px 0 rgba(255,255,255,.5) inset;
-  min-height:340px;
+  min-height:360px;
   width:100%;
 }
-.card img{width:144px;height:144px;border-radius:28px;border:1px solid var(--border);background:#f8fafc}
-.card h3{margin:12px 0 6px 0;font-size:18px;text-align:center;font-weight:600;letter-spacing:-0.01em;color:#111827}
+.card img{width:144px;height:144px;border-radius:28px;border:1px solid var(--border);background:#f8fafc;object-fit:cover}
+.card h3{margin:12px 0 2px 0;font-size:18px;text-align:center;font-weight:600;letter-spacing:-0.01em;color:#111827}
+.card .desc{margin:0 0 6px 0;color:var(--muted);font-size:14px;text-align:center}
 .spacer{flex:1}
-/* ensure no extra rounding on the store badge image */
-.store img{display:block;height:44px;width:auto;border-radius:0;filter:drop-shadow(0 2px 6px rgba(0,0,0,.12))}
+.store{display:block;border-radius:0;background:transparent;box-shadow:none}
+.store .badge{display:block;height:44px;width:auto;border-radius:0!important;box-shadow:none!important;filter:none!important}
 .prose{max-width:780px}
 .prose h1{margin-top:12px}
 .foot{opacity:.9;border-top:1px solid var(--border);margin-top:12px}
